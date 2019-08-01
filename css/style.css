@@ -5,12 +5,13 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  color: #222;
+  color: #6a859c;
 }
 
 
 .navbar {
   padding: .8rem;
+  background-color: #192024;
 }
 
 .navbar li {
@@ -20,6 +21,11 @@ html, body {
 
 .nav-link {
   font-size: 1.1 em !important;
+  color: #6a859c;
+}
+
+.nav-link:hover {
+  color: #9c0;
 }
 
 .carousel-inner img {
@@ -39,7 +45,7 @@ html, body {
 
 .col-md-4 {
   font-size: 75%;
-    background-color: lightgray;
+    background-color: #192024;
 }
 
 .col-md-12 img {
@@ -115,7 +121,7 @@ figure {
 }
 
 .col-lg-6 {
-  background-color: lightgrey;
+  background-color: #192024;
 }
 
 .col-white {
@@ -136,12 +142,12 @@ figure {
 /*---Register Button color changes---*/
 .btn-primary {
   background-color: #9c0;
-  color: #000000;
-  border-color: #000000;
+  color: #192024;
+  border-color: #192024;
 }
 
 .btn-primary:hover {
-  background-color: #000000;
+  background-color: #192024;
   color: #9c0;
   border-color: #9c0;
 }
@@ -174,5 +180,5 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 .gray-panel {
-    background-color: lightgray;
+    background-color: #192024;
 }
