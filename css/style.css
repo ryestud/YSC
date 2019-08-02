@@ -169,6 +169,10 @@ figure {
   border-color: #9c0;
 }
 
+.dark-panel {
+  background-color: #192024;
+}
+
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
