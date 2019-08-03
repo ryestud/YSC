@@ -40,6 +40,10 @@ html, body {
 }
 
 /*---Font size fixes---*/
+.subnote{
+		font-size: 12px;
+}
+
 .col-md-12 {
   font-size: 115%;
 }
@@ -69,6 +73,7 @@ html, body {
 ul {
   list-style: none;
 }
+
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
