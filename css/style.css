@@ -8,7 +8,7 @@ html, body {
   color: #6a859c;
   text-align: center;
 }
-
+ 
 
 .navbar {
   padding: .8rem;
@@ -172,6 +172,18 @@ figure {
   background-color: #192024;
   color: #9c0;
   border-color: #9c0;
+}
+
+.btn-primary-dark {
+  background-color: #192024;
+  color: #9c0;
+  border-color: #9c0;
+}
+
+.btn-primary-dark:hover {
+  background-color: #9c0;
+  color: #192024;
+  border-color: #192024;
 }
 
 .dark-panel {
