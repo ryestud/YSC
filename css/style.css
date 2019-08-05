@@ -180,11 +180,16 @@ figure {
   border-color: #9c0;
 }
 
+.btn-large {
+  font-size: 300%;
+}
+
 .btn-primary-dark:hover {
   background-color: #9c0;
   color: #192024;
   border-color: #192024;
 }
+
 
 .dark-panel {
   background-color: #192024;
@@ -216,6 +221,15 @@ Extra (xl) large devices (large desktops, 1200px and up)
 .lead {
     text-align: center;
     text-indent: inherit;
+}
+
+.lead a {
+  color: #9c0;
+  text-decoration: none;
+}
+
+.lead a:hover {
+  color: #6a859c;
 }
 
 .white-panel {
