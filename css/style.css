@@ -48,7 +48,11 @@ html, body {
 
 /*
 .carousel-inner img {
+<<<<<<< HEAD
   width: 70%;
+=======
+  width: 50%;
+>>>>>>> 8b67fd77cb7c2c8e19f5eb38760e970b5ba183d9
   height: 50%;
 
 }
@@ -66,8 +70,31 @@ html, body {
 		font-size: 12px;
 }
 
+.col-12 h1 {
+  font-size: 400%;
+}
+
+.col-12 p {
+  margin: 0em 15% 0 15%;
+  font-size: 150%;
+}
+
+
+.col-12 strong {
+  font-size: 125%;
+  font-weight: bold;
+}
+
 .col-md-12 {
-  font-size: 115%;
+  font-size: 150%;
+}
+
+.col-md-12 h1 {
+  font-size: 200%;
+}
+
+.col-md-12 p{
+  margin: 0 5% 0 5%;
 }
 
 .col-xs-12 {
@@ -176,10 +203,6 @@ figure {
   background-color: #192024;
 }
 
-.col-12 strong {
-  font-size: 125%;
-  font-weight: bold;
-}
 
 .col-white {
   background-color: white;
@@ -199,6 +222,7 @@ figure {
 
 /*---Register Button color changes---*/
 .btn-primary {
+  font-size: 150%;
   background-color: #9c0;
   color: #192024;
   border-color: #192024;
@@ -221,6 +245,7 @@ figure {
 }
 
 .btn-join {
+  font-size: 150%;
   background-color: #192024;
   color: #9c0;
   border-color: #9c0;
@@ -245,6 +270,7 @@ a[type="button"]:disabled {
 }
 
 .btn-off {
+  font-size: 150%;
   background-color: #192024;
   color: #9c0;
   border-color: #9c0;
