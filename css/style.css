@@ -278,6 +278,10 @@ a[type="button"]:disabled {
   color: #9c0;
 }
 
+.row-md-6 p {
+  font-size: 100%;
+}
+
 .section-break {
   background-color: #192024;
 }
