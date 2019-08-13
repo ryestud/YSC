@@ -274,6 +274,10 @@ a[type="button"]:disabled {
   background-color: #192024;
 }
 
+.dark-panel h1 {
+  color: #9c0;
+}
+
 .section-break {
   background-color: #192024;
 }
