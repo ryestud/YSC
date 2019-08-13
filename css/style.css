@@ -126,6 +126,11 @@ row{
 }
 
 
+.container-fluid .navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
 
@@ -136,7 +141,20 @@ row{
 @media (max-width: 576px) {
   .navbar h1{
     font-size: 1.7em;
+    padding-top: .3em;
   }
+
+  .navbar-toggler-icon{
+    font-size: 0.7em;
+}
+
+  .container-fluid .navbar-brand img {
+    width: 35px;
+    height: 35px;
+  }
+  
+
+
 }
 
 
