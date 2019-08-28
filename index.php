@@ -1,4 +1,6 @@
-<!doctype html>
+<?php
+	
+?>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -17,38 +19,6 @@
     <!--Fonts-->
     <script src=https://use.fontawesome.com/releases/v5.0.8/js/all.js></script>
 
-		<!--My scripts-->
-		<script>
-			$(document).ready(function(){
-				$("#free-content").hide();
-				$("#fee-content").hide();
-			
-				$("#freebutton").click(function(){
-					$("#free-content").toggle(500);
-					if($("#fee-content").is(":visible"))
-						$("#fee-content").hide();
-				});
-				$("#feebutton").click(function(){
-					$("#fee-content").toggle(500);
-					if($("#free-content").is(":visible"))
-						$("#free-content").hide();
-				});
-			});
-		</script>
-<!--
-		<script>
-			$(document).ready(function(){
-				if($("#free-content") == false){
-					
-				}
-				$("#freebutton").click(function(){
-					$("#free-content").toggle();
-				});
-			});
-		</script>
--->
-<!--		<script src="js/script.js"></script>-->
-		
     <!-- My CSS -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -83,7 +53,21 @@
     </div>
     </nav>
 
-    <!--Mission-->
+		
+<!--		New Header-->
+		<div class = "container-fluid padding">
+			<div class = "row welcome text-center">
+				<div class = "col-12">
+					<h1>Preparing Girls & Boys for College & Life Through STEM.</h1>
+				</div>
+				<div class = "col-12">
+					<p class = "lead">Opening The Minds And Hearts Of K - 12 Children And Their Families To The World Of STEM. Using A Unique Mastery Learning Program Integrating Math, Chess, Coding, And Financial Support Into A Single Program To Prepare For College. Our goal is to foster young boys and girls equally into STEM.</p>
+				</div>
+			</div>
+		</div>
+		
+<!--    Mission-->
+<!--
     <div class="container-fluid padding">
       <div class="row welcome text-center">
         <div class="col-12">
@@ -97,31 +81,22 @@
         </div> 
       </div>
     </div>
+-->
 
-        <!--Free or Premium-->
+        <!--Free or Fee-->
 		<div class="col-12 dark-panel">
-				<h1 class="display-4">Our Programs</h1>
-		</div>
+									<h1 class="display-4">Our Programs</h1>
         <div class="container-fluid padding">
           <div class="row padding">
-						
             <div class="col-md-12 col-lg-6 dark-panel">
-								<button id="freebutton" class="btn btn-primary-dark btn-large">FREE</button>
-            </div>
-          
-            <div class="col-md-12 col-lg-6 dark-panel">
-                <button id="feebutton" class="btn btn-primary-dark btn-large">PREMIUM</button>       
-            </div>
-						
-						<!--Toggled with jQuery-->
-								<div class="col-12 dark-panel">
-								<div id="free-content" class = "collapse text-center">
+                <button class="btn btn-primary-dark btn-large" data-toggle="collapse" data-target="#free-content">FREE</button>
+                <div class="collapse" id="free-content">
                   <br>
                   <p><strong>Can't afford to donate monthly? We'd still love to have your student join!</strong>
                   <br><br>Our program was designed to help the most vulnerable students find their own success in STEM. We figured that if we could the students to graduate with a STEM degree we could break the cycle of poverty in one generation. The founders were tired of help being promised to help every year, every election every generation. We are helping our students help themselves. 
                     <br><br>That is why our program is FREE to students from at risk backgrounds, schools, organizations that help them specifically those that qualify for free and reduced lunch.
                     </p> <br>
-                  <ul> 
+                  <ul>
                     <li>In depth program from K-12</li>
                     <li>Tutoring in Chess strategy</li>
                     <li>Learn Math at different skill levels</li>
@@ -136,10 +111,13 @@
 										<p style="color:#9c0" >**Currently, we are not able to accept any more eligible students into the free program. We will make this link available as soon as we have funding available to add additional students. </p>
 									</div>
                 </div>
-						</div>
-					
-						<div class="col-12 dark-panel">
-								<div class="collapse text-center" id="fee-content">
+            </div>
+          
+            <div class="col-md-12 col-lg-6 dark-panel">
+                <button class="btn btn-primary-dark btn-large collapsible">PREMIUM</button>
+<!--							<button class="btn btn-primary-dark btn-large" data-toggle="collapse" data-target="#premium-content">PREMIUM</button>-->
+<!--                <div class="collapsible" id="premium-content">-->
+<!--                <div class="collapse" id="premium-content">-->
                     <br>
                     <p><strong>Become a member now to benefit your child and all other children who participate in our program!</strong>
                         <br><br>
@@ -162,14 +140,33 @@
                     </ul>
                     <br>
                     <a href="donate.html" class="btn btn-join">Learn More!</a>
-                </div>
-						</div>
-					</div>
-					
-								
-					
+                </div> 
+            </div>
+          </div>
         </div>
       
+		
+		
+<!--
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight){
+						content.style.maxHeight = null;
+					} else {
+						content.style.maxHeight = content.scrollHeight + "px";
+					} 
+				});
+			}
+		</script>
+-->
+		
+		
 
     <!--Our Story-->
     <div class="container-fluid padding">
@@ -249,16 +246,14 @@
         <div class="col-md-12 col-lg-6 ">
           <div class="row padding">
             <div class="container-fluid padding">
-              <h1>Testimonials</h1><br>
+              <h1>Testimonials</h1>
             </div>
           </div>
-          <h3>Jasmine R</h3>
+          <h3>Jasmine R</h3><br> 
           <p>"The Y STEM and Chess Inc program has been such an amazing opportunity for June. She went through a lot over the last couple years and her growth has been incredible. She has an incredible focus and her self-esteem has skyrocketed! June has become more conscientious of her actions and how they impact those around her. I'm so thankful YSC and June LOVES it."</p>
-          <br>
         </div>
       
         <div class="col-md-12 col-lg-6 ">
-          <br>
             <img src="images/JasmineR.png">
         </div>
       </div>
@@ -267,7 +262,7 @@
     <div class="container-fluid padding">
       <div class="row padding">
         <div class="col-md-12 col-lg-6 ">
-          <h3>Kim H</h3>
+          <h3>Kim H</h3><br>
           <p>"We are so grateful for YSC for mentoring our 9-year-old son and 6-year-old son. Both of our boys are gifted, and we struggled to find afforable resources for the boys. It's impossible to overstate the importance of a kind and involved mentor in a young child's life."</p> <!--ADD ASTERISK explanation (qualify for free&reduced lunch=free for you-->
         </div>
       
@@ -326,6 +321,17 @@
     </footer>
 
 		
+		
+		<script>
+			function myFunction() {
+				var x = document.getElementById("free-content");
+				if (x.style.display === "none") {
+					x.style.display = "show";
+				} else {
+					x.style.display = "none";
+				}
+			}
+		</script>
 		
 		
   </body>
