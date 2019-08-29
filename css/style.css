@@ -73,6 +73,12 @@ html, body {
   font-size: 150%;
 }
 
+.col-12 img {
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 
 .col-12 strong {
   font-size: 125%;
@@ -110,7 +116,10 @@ html, body {
 
 .col-md-12 img {
   padding-top: 2.5em;
-  padding-left: 3em;
+}
+
+.col-md-12 figcaption {
+  color: #9c0;
 }
 
 ul {
