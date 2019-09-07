@@ -8,6 +8,9 @@ html, body {
   color: #6a859c;
   text-align: center;
 }
+.darktext{
+	color: darkslategrey;
+}
  
 
 .navbar {
